@@ -26,5 +26,8 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
+// router.beforeEach({//添加路由守卫实现tdk的切换，优化网站的seo
+
+// })
 
 export default router;
