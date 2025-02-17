@@ -25,4 +25,8 @@
     }
   }
 }
+*,*::before,*::after{margin: 0;padding: 0;}
+.el-carousel__container{
+    height: 100% !important;
+}
 </style>
