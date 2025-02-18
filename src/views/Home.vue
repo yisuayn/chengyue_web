@@ -3,6 +3,9 @@
     <h1>家纺产品展示</h1>
     <!-- 传递图片数组给 Carousel 组件 -->
     <Carousel :images="productImages" :autoplayInterval="5000" :arrowvalue="hover" :height="height" />
+    <div class="webvideo">
+      <VideoComponent ></VideoComponent>
+    </div>
     <div class="card-container">
       <el-row>
         <el-col :span="6" v-for="(card, index) in cardsData" :key="index">
@@ -17,13 +20,15 @@
 <script>
 // 导入 Carousel 组件
 import Carousel from '../components/Caiousel.vue';
-import CardComponent from '../components/Webcard.vue'
+import CardComponent from '../components/Webcard.vue';
+import VideoComponent from '../components/Webvideo.vue';
 
 export default {
   name: 'App',
   components: {
     Carousel,
-    CardComponent
+    CardComponent,
+    VideoComponent
   },
   data() {
     return {
