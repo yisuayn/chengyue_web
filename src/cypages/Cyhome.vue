@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>家纺产品展示</h1>
     <!-- 传递图片数组给 Carousel 组件 -->
     <Carousel
       :images="productImages"
@@ -43,7 +44,7 @@ export default {
   data() {
     return {
       hover: "hover",
-      height: "80vw",
+      height: "80vh",
       // 定义图片数组，可以根据需求替换为实际的产品图片链接
       productImages: [
         "https://image.evget.com/2025/02/12/CULTUREts5c3wpd47eyt78c.png",
