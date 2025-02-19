@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>家纺产品展示</h1>
     <!-- 传递图片数组给 Carousel 组件 -->
     <Carousel
       :images="productImages"
@@ -8,6 +7,7 @@
       :arrowvalue="hover"
       :height="height"
     />
+    <Cycontent />
     <div class="webvideo">
       <VideoComponent></VideoComponent>
     </div>
@@ -33,6 +33,7 @@
 import Carousel from "../components/Caiousel.vue";
 import CardComponent from "../components/Webcard.vue";
 import VideoComponent from "../components/Webvideo.vue";
+import Cycontent from "../components/Cycontent.vue";
 
 export default {
   name: "App",
@@ -40,6 +41,7 @@ export default {
     Carousel,
     CardComponent,
     VideoComponent,
+    Cycontent
   },
   data() {
     return {
