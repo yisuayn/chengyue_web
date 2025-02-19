@@ -6,10 +6,11 @@ import Home from "../views/Home.vue";
 Vue.use(VueRouter);
 
 const DEFAULT_TDK = {
-  title: 'Vue 企业门户网站 - 首页',
-  description: '这是一个基于 Vue.js 构建的企业门户网站，提供产品展示、新闻资讯等功能。',
-  keywords: '企业门户, Vue, Vue2, CMS, 网站建设'
-}
+  title: "Vue 企业门户网站 - 首页",
+  description:
+    "这是一个基于 Vue.js 构建的企业门户网站，提供产品展示、新闻资讯等功能。",
+  keywords: "企业门户, Vue, Vue2, CMS, 网站建设",
+};
 
 const routes = [
   {
@@ -26,6 +27,9 @@ const routes = [
           description: "",
           keywords: "",
         },
+      },
+      {
+        path: "/2-1",
       },
     ],
   },
@@ -50,12 +54,15 @@ router.beforeEach((to, from, next) => {
   // if (to.meta.requiresAuth && !store.state.auth.isAuthenticated) {
   //   return next("/login"); // 未登录则跳转到登录页
   // }
-   // 🔹 2. 设置 TDK
-   if (!to.meta.title) {
+  // 🔹 2. 设置 TDK
+  if (!to.meta.title) {
     document.title = to.meta.title || DEFAULT_TDK.title;
   }
   if (!to.meta.description) {
-    updateMetaTag("description", to.meta.description || DEFAULT_TDK.description);
+    updateMetaTag(
+      "description",
+      to.meta.description || DEFAULT_TDK.description
+    );
   }
   if (!to.meta.keywords) {
     updateMetaTag("keywords", to.meta.keywords || DEFAULT_TDK.keywords);

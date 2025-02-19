@@ -7,23 +7,19 @@
 </template>
 
 <script>
-import Cyheader from "../components/Cyheader.vue"
-import Cyfooter from "../components/Cyfooter.vue"
+import Cyheader from "../components/Cyheader.vue";
+import Cyfooter from "../components/Cyfooter.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Cyheader,
-    Cyfooter
+    Cyfooter,
   },
   data() {
-    return {
-    };
+    return {};
   },
-  methods: {
-  },
-  computed: {
-
-  }
+  methods: {},
+  computed: {},
 };
 </script>
 

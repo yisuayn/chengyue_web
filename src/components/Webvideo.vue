@@ -52,7 +52,7 @@ export default {
       progress: 0, // 视频进度，范围 [0, videoDuration]
       currentTime: 0, // 当前播放时间
       videoDuration: 0, // 视频总时长
-      autoplay:true,
+      autoplay: true,
     };
   },
   mounted() {
