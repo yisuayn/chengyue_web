@@ -1,10 +1,10 @@
 <template>
   <div class="web_video">
+    <br/>
     <video
       ref="video"
       :src="videoUrl"
       :width="width"
-      :height="height"
       @play="onPlay"
       @pause="onPause"
       @ended="onEnded"
@@ -14,7 +14,6 @@
       <button @click="togglePlay">
         {{ isPlaying ? "暂停" : "播放" }}
       </button>
-
       <!-- 音量控制 -->
       <input
         type="range"
@@ -46,7 +45,7 @@ export default {
     return {
       videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4", // 视频源地址
       width: "100%", // 视频宽度
-      // height: 400, // 视频高度
+      // height: "100vw", // 视频高度
       isPlaying: false, // 视频是否在播放
       volume: 1, // 音量，范围 [0, 1]
       progress: 0, // 视频进度，范围 [0, videoDuration]
