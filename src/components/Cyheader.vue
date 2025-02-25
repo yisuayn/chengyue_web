@@ -50,21 +50,25 @@ export default {
 .Cyheader {
   position: fixed;
   background-color: transparent;
+  padding: 0 40px;
   width: 100%;
   z-index: 99999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .Cy_logo{
+  .Cy_logo {
     display: flex;
     align-items: center;
+    padding: 0 60px;
   }
   .el-menu {
     background-color: transparent;
   }
-  .el-menu.el-menu--horizontal{border: solid 1px transparent;}
-}
-.carousel-image{
-    border-radius: 0 !important;
+  .el-menu.el-menu--horizontal {
+    border: solid 1px transparent;
   }
+}
+.carousel-image {
+  border-radius: 0 !important;
+}
 </style>
