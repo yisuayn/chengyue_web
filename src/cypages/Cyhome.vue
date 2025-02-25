@@ -29,24 +29,15 @@
 </template>
 
 <script>
-// 导入 Carousel 组件
-import Carousel from "../components/Caiousel.vue";
-import CardComponent from "../components/Webcard.vue";
-import VideoComponent from "../components/Webvideo.vue";
-import Cycontent from "../components/Cycontent.vue";
 
 export default {
   name: "App",
   components: {
-    Carousel,
-    CardComponent,
-    VideoComponent,
-    Cycontent
   },
   data() {
     return {
       hover: "hover",
-      height: "80vh",
+      height: "80vh",//定义板块的轮播图高度
       // 定义图片数组，可以根据需求替换为实际的产品图片链接
       productImages: [
         "https://image.evget.com/2025/02/12/CULTUREts5c3wpd47eyt78c.png",

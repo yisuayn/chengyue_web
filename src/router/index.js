@@ -7,8 +7,7 @@ Vue.use(VueRouter);
 
 const DEFAULT_TDK = {
   title: "Vue 企业门户网站 - 首页",
-  description:
-    "这是一个基于 Vue.js 构建的企业门户网站，提供产品展示、新闻资讯等功能。",
+  description:"这是一个基于 Vue.js 构建的企业门户网站，提供产品展示、新闻资讯等功能。",
   keywords: "企业门户, Vue, Vue2, CMS, 网站建设",
 };
 
@@ -29,8 +28,52 @@ const routes = [
         },
       },
       {
-        path: "/2-1",
+        path: "/Winterquilt",
+        name: "Winterquilt",
+        component: () => import("../cypages/Winterquilt.vue"),
+        meta:{},
       },
+      {
+        path: "/Weddingkit",
+        name: "Weddingkit",
+        component: () => import("../cypages/Weddingkit.vue"),
+        meta:{},
+      },
+      {
+        path: "/Coolingcomforter",
+        name: "Coolingcomforter",
+        component: () => import("../cypages/Coolingcomforter.vue"),
+        meta:{},
+      },
+      {
+        path:'/Cycontent',
+        name:'Cycontent',
+        component:()=>import("../cypages/Cycontent.vue"),
+        meta:{}
+      },
+      {
+        path:'/Brandvision',
+        name:'Brandvision',
+        component:()=>import("../cypages/about/Brandvision.vue"),
+        meta:{}
+      },
+      {
+        path:'/Companyprofile',
+        name:'Companyprofile',
+        component:()=>import("../cypages/about/Companyprofile.vue"),
+        meta:{}
+      },
+      {
+        path:'/Developmenthistory',
+        name:'Developmenthistory',
+        component:()=>import("../cypages/about/Developmenthistory.vue"),
+        meta:{}
+      },{
+        path:'/Joinus',
+        name:'Joinus',
+        component:()=>import("../cypages/about/Joinus.vue"),
+        meta:{}
+      }
     ],
   },
   {

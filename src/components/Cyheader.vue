@@ -1,6 +1,6 @@
 <template>
   <div class="Cyheader">
-    <div>
+    <div class="Cy_logo">
       <img src="" alt="" />
       <h1>晟玥科技</h1>
     </div>
@@ -12,19 +12,19 @@
       :router="true"
     >
       <el-menu-item index="/">主页</el-menu-item>
-      <el-submenu index="/">
+      <el-submenu index="2">
         <template slot="title">产品种类</template>
-        <el-menu-item index="2-1">冬季棉被</el-menu-item>
-        <el-menu-item index="2-2">婚庆套件</el-menu-item>
-        <el-menu-item index="2-3">夏凉被</el-menu-item>
+        <el-menu-item index="Winterquilt">冬季棉被</el-menu-item>
+        <el-menu-item index="Weddingkit">婚庆套件</el-menu-item>
+        <el-menu-item index="Coolingcomforter">夏凉被</el-menu-item>
       </el-submenu>
-      <el-menu-item index="/login">品牌动态</el-menu-item>
+      <el-menu-item index="Cycontent">品牌动态</el-menu-item>
       <el-submenu index="4">
         <template slot="title">关于我们</template>
-        <el-menu-item index="4-1">公司简介</el-menu-item>
-        <el-menu-item index="4-2">发展历程</el-menu-item>
-        <el-menu-item index="4-3">品牌愿景</el-menu-item>
-        <el-menu-item index="4-3">加入我们</el-menu-item>
+        <el-menu-item index="Companyprofile">公司简介</el-menu-item>
+        <el-menu-item index="Developmenthistory">发展历程</el-menu-item>
+        <el-menu-item index="Brandvision">品牌愿景</el-menu-item>
+        <el-menu-item index="Joinus">加入我们</el-menu-item>
       </el-submenu>
     </el-menu>
   </div>
@@ -55,6 +55,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .Cy_logo{
+    display: flex;
+    align-items: center;
+  }
   .el-menu {
     background-color: transparent;
   }
