@@ -49,7 +49,7 @@ export default {
 <style lang="scss">
 .Cyheader {
   position: fixed;
-  background-color: #eee;
+  background-color: transparent;
   width: 100%;
   z-index: 99999;
   display: flex;
@@ -64,4 +64,7 @@ export default {
   }
   .el-menu.el-menu--horizontal{border: solid 1px transparent;}
 }
+.carousel-image{
+    border-radius: 0 !important;
+  }
 </style>

@@ -29,10 +29,12 @@
 </template>
 
 <script>
-
+import Cycontent from '../components/Cycontent.vue';
 export default {
   name: "App",
-  components: {},
+  components: {
+    Cycontent,
+  },
   data() {
     return {
       hover: "hover",
