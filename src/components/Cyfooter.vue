@@ -1,7 +1,5 @@
 <template>
   <div class="Cyfooter">
-    <!-- <div class="Cyfooter_up">
-    </div> -->
     <div class="Cyfooter_bottom">
       <p>晟玥科技 ©2025 chengyue-gz.cn 版权所有</p>
       <p>黔ICP备2024019223号-1</p>
@@ -41,4 +39,7 @@
     </div>
   </div>
 </template>
+
+<script src="../assets/iconfont"></script>
+
 <style lang="scss"></style>

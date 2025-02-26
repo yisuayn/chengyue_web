@@ -49,7 +49,7 @@ export default {
 <style lang="scss">
 .Cyheader {
   position: fixed;
-  background-color: transparent;
+  background-color: #eee;
   padding: 0 40px;
   width: 100%;
   z-index: 99999;
