@@ -22,9 +22,9 @@ const routes = [
         component: () => import("../cypages/Cyhome.vue"),
         meta: {
           requiresAuth: true,
-          title: "",
-          description: "",
-          keywords: "",
+          title: "首页-晟玥科技",
+          description: "爱丽丝家纺，专注高品质家用纺织品，舒适生活从这里开始。",
+          keywords: "家纺,床上用品",
         },
       },
       {

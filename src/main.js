@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import 'animate.css';
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import Carousel from "./components/Caiousel.vue";
@@ -12,6 +13,9 @@ import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta)
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);

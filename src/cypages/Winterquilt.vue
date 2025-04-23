@@ -5,16 +5,19 @@
     </div>
 </template>
 <script>
+import image from "../../public/LogoImage/53.jpeg"
+import image1 from "../../public/LogoImage/54.jpeg"
+import image2 from "../../public/LogoImage/55.jpeg"
 export default {
     name: "Winterquilt",
     data() {
         return {
-            height: "50vh",
+            height: "95vh",
             hover: "hover",
             productImages:[
-                "https://www.topthink.com/uploads/assistant/20250220/a1c597330e471fe3bec54fe0a056c410.png",
-                "https://www.topthink.com/uploads/assistant/20250220/a1c597330e471fe3bec54fe0a056c410.png",
-                "https://www.topthink.com/uploads/assistant/20250220/a1c597330e471fe3bec54fe0a056c410.png"
+                image,
+                image1,
+                image2,
             ],
         }
     }

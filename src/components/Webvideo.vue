@@ -40,13 +40,14 @@
   </div>
 </template>
 <script>
+import mov_bbb from '../../public/LogoImage/title.mp4'
 export default {
   data() {
     return {
-      videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4", // 视频源地址
+      videoUrl: mov_bbb, // 视频源地址
       width: "100%", // 视频宽度
       // height: "100vw", // 视频高度
-      isPlaying: false, // 视频是否在播放
+      isPlaying: true, // 视频是否在播放
       volume: 1, // 音量，范围 [0, 1]
       progress: 0, // 视频进度，范围 [0, videoDuration]
       currentTime: 0, // 当前播放时间

@@ -1,6 +1,6 @@
 <template>
   <div class="content_layout">
-    <h1>产品推荐</h1>
+    <h1 class="animate__animated animate__flip">产品推荐</h1>
     <el-row :gutter="20">
       <el-col :span="16">
         <div class="grid-content bg-purple"></div>
