@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       hover: "hover",
-      height: "80vh",//定义板块的轮播图高度
+      height: "90vh",//定义板块的轮播图高度
       // 定义图片数组，可以根据需求替换为实际的产品图片链接
       productImages: [
         image1,image2,image3,image4,image5,
